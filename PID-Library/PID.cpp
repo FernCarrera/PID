@@ -39,7 +39,7 @@
 
 		//clock_t time = std::clock();
 		double time = millis();
-		double error = target - signal;
+		double error = *target - *signal;
 
 		//double elapsed_time = double(time - previous_time) / CLOCKS_PER_SEC;
 		double elapsed_time = double(time - previous_time);
